@@ -18,8 +18,8 @@ body {
 
 
 header {
-
-    background: #01012b;
+    border-bottom:solid 3px rgb(17, 8, 70);
+    background: #01012e;
     position: sticky;
     top: 0;
     height: 75px;
@@ -230,10 +230,16 @@ h1 {
 /* ACERCA DE MI */
 
 .aboutme__container {
-    background: #13013d;
+    background: #01012e;
+    
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px 30px 20px;
+    padding: 40px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
 
 }
 
@@ -248,7 +254,7 @@ h1 {
 
 .aboutme__container p {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     margin: 0;
@@ -299,7 +305,7 @@ h1 {
 
 
 .aboutme {
-    background: #13013d;
+    background: #01012e;
 
 
 }
@@ -435,112 +441,191 @@ h1 {
 
 /* MIS HABILIDADES */
 
+
+
+.skills__container{
+    display: flex;
+    padding: 0 20px 20px 20px;
+    align-items: center;
+    gap: 70px;
+    overflow-x: scroll;
+}
+.skills__container::-webkit-scrollbar-thumb {
+    background: #5c3bef;
+    border-radius: 30px;
+}
+
 .skills h2 {
     color: white;
     font-weight: bold;
     text-align: center;
     font-size: 28px;
     margin-top: 75px;
+    
+
+}
+.skills__cart-html{
+    max-height: 380px;
+    min-width: 380px;
+    background-color:#020231;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+   
+   
 
 }
 
-.porcentage {
-    /* bac,kground:red; */
-    color: #FEB211;
-    font-weight: bold;
-    font-size: 25px;
+.skills__cart-html h3{
+ color :white;
+ text-align: center;
+ font-size: 30px;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ gap:20px;
+ margin:0;
 }
 
-.skills__text {
-    color: white;
+.skills__cart-html i{
+   color: #00ff22;
+    font-size: 70px;
+}
+.skills__cart-html p{
+    color:white;
+    margin:0;
     font-size: 18px;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    align-items: center;
-    gap: 70px;
 }
 
-.vectorlateral {
-    background: #13013d;
-    width: 150px;
-    height: 380px;
-    position: absolute;
-    z-index: -10;
-    margin-bottom: 300px;
-    margin-right: 235px;
-}
 
-.content__skills {
-    display: flex;
-    gap: 10px;
-
-    /* justify-content:space-between; */
-    /* padding: 0 10px 0 0px;
-    margin: 0 auto; */
-    /* max-width: 900px; */
-
-    /* width:100vh; */
-    height: 590px;
-    /* padding-right: 30px; */
-    /* align-items:center; */
-    /* justify-content: center; */
-}
-
-.porcentage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 36px;
-    background-color: #13013d;
-    width: 50px;
-    justify-content: center;
-    padding-right: 20px;
-    padding-left: 80px;
+.skills__cart-css{
+    background-color:#020231;
+    padding: 10px 10px 10px 10px;
+    max-height: 380px;
+    min-width: 380px;
+    border-radius: 20px;
+    
 
 }
 
-.porcentage h3 {
+.skills__cart-css h3{
+ color :white;
+ text-align: center;
+ font-size: 30px;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ gap:20px;
+ margin:0;
+}
+
+.skills__cart-css i{
+   color: #00ff22;
+    font-size: 70px;
+}
+.skills__cart-css p{
+    color:white;
+    margin:0;
+    font-size: 18px;
+}
+
+
+.skills__cart-javascript{
+    max-height: 380px;
+    min-width: 380px;
+    background-color:#020231;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    /* border: 1px solid yellow; */
+
+}
+
+.skills__cart-javascript h3{
+ color :white;
+ text-align: center;
+ font-size: 30px;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ gap:20px;
+ margin:0;
+}
+
+.skills__cart-javascript i{
+   color: #00ff22;
+    font-size: 70px;
+}
+.skills__cart-javascript p{
+    color:white;
     margin: 0;
-    padding-left: 0;
+    font-size: 18px;
 }
 
-.skills__text {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 0px;
-    font-size: 16px;
-    padding-left: 20px;
-    justify-content: center;
-    /* align-items:flex-end; */
+
+.skills__cart-React{
+    max-height: 380px;
+    min-width: 380px;
+    background-color:#020231;
+    padding: 10px 10px 10px 10px;
+    /* border: 1px solid yellow; */
+    border-radius: 20px;
+
 }
 
-.skills__text p {
-    margin: 0;
+.skills__cart-React h3{
+ color :white;
+ text-align: center;
+ font-size: 30px;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ gap:20px;
+ margin:0;
 }
 
-.skills {
-    /* margin-top: 30px; */
-    max-width: 900px;
-    margin: 0 auto;
+.skills__cart-React i{
+   color: #00ff22;
+    font-size: 70px;
+}
+.skills__cart-React p{
+    color:white;
+    margin:0;
+    font-size: 18px;
 }
 
-.web {
-    padding-top: 20px;
+.skills__cart-github{
+    max-height: 380px;
+    min-width: 380px;
+    background-color:#020231;
+    padding: 10px 10px 10px 10px;
+    /* border: 1px solid yellow; */
+    border-radius: 20px;
+
 }
 
-.motion {
-    padding-top: 15px;
+.skills__cart-github h3{
+ color :white;
+ text-align: center;
+ font-size: 30px;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ gap:20px;
+ margin:0;
 }
 
-.gestion {}
-
-.porciento {
-    padding-top: 30px;
+.skills__cart-github i{
+   color: #00ff22;
+    font-size: 70px;
 }
+.skills__cart-github p{
+    color:white;
+    margin:0;
+    font-size: 18px;
+}
+
+
+
+
 
 
 /* PORTAFOLIO */
@@ -942,7 +1027,7 @@ footer h2 {
 
     .aboutme__container p {
         text-align: center;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
         color: white;
         margin: 0;
