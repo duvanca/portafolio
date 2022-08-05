@@ -62,9 +62,10 @@
                         </p>
 
                         <div class="containerlogos">
-                            <i class='bx bxl-linkedin' ></i>
+                           <a href="https://www.linkedin.com/in/duvan-camilo-mu%C3%B1oz-mu%C3%B1oz-8b7272201/" target="_blank"><i class='bx bxl-linkedin' ></i></a> 
+                            <a href="https://github.com/duvanca" target="_blank"><i class='bx bxl-github'></i></a>
                             
-                            <i class='bx bxl-github'></i>
+                            
                         </div>
 
                        <a class ="linkdownload"href="/img/CV.pdf" class="cv" download ="C.V Duvan" title="descargar C.V">
@@ -249,14 +250,12 @@
                     </div>
                     
               
-                        <div class="card" Style="--i:url(img/Apprick.jpg)">
+                        <div class="card" Style="--i:url(img/waterapp.jpg)">
                             
                             <div class="content">
         
-                                <h3> <i class='bx bxl-react'></i>Rick and Morty</h3>
-                                <p>Permite explorar los diferentes universos de la serie. Es una página que consume la API de Rick and Morty. La idea es poder ver las 126 dimensiones por las cuales viajan estos dos personajes.
-        
-                                    La app fue construida haciendo uso de Vite con React. Además se hizo uso de hooks, customhooks y componentes para darle estructura y orden. También, es importante decir que las peticiones son realizadas con axios.</p>
+                                <h3> <i class='bx bxl-react'></i>Weather App.</h3>
+                                <p>Esta pequeña App del tiempo fue realizada con React y sus principales Hooks como useState y useEffect. La App está conectada a una API que detecta automáticamente nuestra ubicación. Por supuesto, esta App ofrece información relevante como los vientos, la presión atmosférica y también ofrece la posibilidad de alternar entre grados F° o C°.</p>
                                 <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
                                 <a href="#"><i class='bx bxl-github'></i>github</a>
                             </div>
@@ -265,42 +264,34 @@
 
                         <div class="portfolio__container">
               
-                            <div class="card" Style="--i:url(img/Apprick.jpg)">
+                            <div class="card" Style="--i:url(img/poke.jpg)">
                                 
                                 <div class="content">
             
-                                    <h3> <i class='bx bxl-react'></i>Rick and Morty</h3>
-                                    <p>Permite explorar los diferentes universos de la serie. Es una página que consume la API de Rick and Morty. La idea es poder ver las 126 dimensiones por las cuales viajan estos dos personajes.
-            
-                                        La app fue construida haciendo uso de Vite con React. Además se hizo uso de hooks, customhooks y componentes para darle estructura y orden. También, es importante decir que las peticiones son realizadas con axios.</p>
+                                    <h3> <i class='bx bxl-react'></i>Pokedex</h3>
+                                    <p>La pokedex nos permite interactuar con todos los pokemons de la API oficial de pokemon,nos permite buscar un pokemon por nombre como tambien el filtro por tipo de pokemon.
+
+                                      <br>  Es importante destacar el uso de Redux, React Router, useSelect y los hooks habituales useEffect y useState.
+                                    </p>
                                     <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
                                     <a href="#"><i class='bx bxl-github'></i>github</a>
                                 </div>
                                 
                             </div>
 
-                                          
-                <div class="card" Style="--i:url(img/Apprick.jpg)">
-                    
-                    <div class="content">
-
-                        <h3> <i class='bx bxl-react'></i>Rick and Morty</h3>
-                        <p>Permite explorar los diferentes universos de la serie. Es una página que consume la API de Rick and Morty. La idea es poder ver las 126 dimensiones por las cuales viajan estos dos personajes.
-
-                            La app fue construida haciendo uso de Vite con React. Además se hizo uso de hooks, customhooks y componentes para darle estructura y orden. También, es importante decir que las peticiones son realizadas con axios.</p>
-                        <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
-                        <a href="#"><i class='bx bxl-github'></i>github</a>
-                    </div>
-                    
-                </div>
-
+                            <div class="card" Style="--i:url(img/formulario.jpg)">
                             
-              
-                                
-
-                
+                                <div class="content">
             
-            </div>
+                                    <h3> <i class='bx bxl-react'></i>CRUD form.</h3>
+                                    <p> Esta pequeña App del tiempo fue realizada con React y sus principales Hooks como useState y useEffect. La App está conectada a una API que detecta automáticamente nuestra ubicación. Por supuesto, esta App ofrece información relevante como los vientos, la presión atmosférica y también ofrece la posibilidad de alternar entre grados F° o C°.</p>
+                                    <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
+                                    <a href="#"><i class='bx bxl-github'></i>github</a>
+                                </div>
+                                
+                            </div>
+
+                </div>
 
 
                
@@ -310,23 +301,18 @@
 
         <section id="contacto" class="contacto">
 
-            <h2>Contacto</h2>
-            <div class="contan">
-                <div class="phone">
-                    <img src="img/iconos/phone.svg" alt="">
-                    <p><span>Número celular</span> <br>
-                        3007199459
-                    </p>
-                </div>
+           <form class="form">
+             <div class="form__container">
+                <h2 class="form__title">Contáctame</h2>
 
-                <div class="mail">
-                    <img src="img/iconos/mail.svg" alt="">
-                    <p><span>Email</span> <br>
-                        duvancamilo1089@gmail.com
-                    </p>
-                </div>
+                <input type="text" class="form__input" placeholder="Nombre">
+                <input type="email" class="form__input" placeholder="Email">
 
-            </div>
+                <textarea class="form__input form__input--messages" placeholder="Mensaje"></textarea>
+
+                <input type="submit" value="enviar" class="form__cta">
+             </div>
+           </form>
 
         </section>
 
