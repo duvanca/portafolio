@@ -11,9 +11,9 @@ html {
 
 body {
     margin: 0;
-    background: #010125; 
+     background: #010125; 
    
-    color: rgb(139, 9, 9);
+    
 
 }
 
@@ -21,7 +21,7 @@ body {
 
 header {
     border-bottom:solid 3px rgb(17, 8, 70);
-    background: #01012e;
+    background: #01012c; 
     position: sticky;
     top: 0;
     height: 75px;
@@ -41,7 +41,7 @@ header {
     position: absolute;
     top: 55px;
     width: 100%;
-    background: #01012b;
+    background: #01012c; 
   
     display: flex;
     flex-direction: column;
@@ -167,21 +167,41 @@ h1 {
 
 
 
-.foto {
-    margin: 0 auto;
 
-
-
-}
 
 .hero__container {
 
     padding-bottom: 35px;
-
-    margin-right: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    
     max-width: 900px;
-    margin: 0 auto;
-    padding: 30px;
+    width: 90%;
+    margin: 90px auto;
+    
+   
+}
+@media screen and (max-width: 655px) {
+  .hero__container{
+    flex-direction: column;
+  }
+}
+.contenedortextlogos p{
+    color:white;
+    font-weight: bold;
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedortextlogos h1{
+    color:white;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
 }
 
 .contenedortextlogos {
@@ -197,17 +217,8 @@ h1 {
 
 
 
-.hero__container__content {
-    display: flex;
-    flex-direction: row-reverse;
-
-    gap: 5px;
-    padding: 0px 5px 0px 5px 0;
-    align-items: center;
-    justify-content: space-between;
 
 
-}
 
 .containerlogos {
     display: flex;
@@ -233,9 +244,9 @@ h1 {
 
 .aboutme__container {
     
-    
+    background: #01012c; 
     max-width: 900px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 40px 20px 30px 20px;
     display: flex;
     flex-direction: column;
@@ -308,7 +319,7 @@ h1 {
 
 .aboutme {
    
-
+    background: #01012c; 
 
 }
 
@@ -714,6 +725,7 @@ h1 {
     background-position: center;
     background-size:cover;
     cursor: pointer;
+    width: 90%;
     
     
  }
@@ -793,10 +805,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-/* .skills{
-    max-width: 900px;
-    margin:0 auto;
-} */
+
 
 /* CONTACTO */
 
@@ -804,11 +813,18 @@ h1 {
 
 .contacto {
   display: flex; 
+  flex-direction: column;
   align-items: center; 
   justify-content:center;
-  color:inherit;
+  background: #01012c; 
   margin-top: 130px;
+  gap:30px;
 
+}
+.title__section{
+    color: white;
+    font-size:32px;
+    font-weight: bold;
 }
 
 .form{
@@ -816,7 +832,7 @@ h1 {
     border: 3px solid #00ff22;
     border-radius: 1em;
     padding: 3.5em 1.5em;
-    max-width: 400px;
+    max-width: 380px;
     width: 90%;
     margin: auto;
     
@@ -867,10 +883,42 @@ h1 {
     
     }
 
+    .phone__email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:60px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .contact{
+        margin:0;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        display: flex;
+        gap:20px;
+        align-items: center;
+    }
+
+   
+
 
 @media (max-width:450px){
     .form{
-        padding: 3.5em 1em;
+        padding: 3.5em .8em;
+    }
+    .contact{
+        margin:0;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
     }
 }
 
@@ -885,19 +933,7 @@ footer h2 {
     font-size: 16px;
 }
 
-@media screen and (min-width: 417px) {
-    h1 {
-        color: white;
-        font-weight: bold;
-        font-size: 70px;
-        text-align: center;
-        margin: 0;
-        margin: auto;
-        /* padding-left:30px;  */
 
-        /* margin:16px 0px 16px 0px; */
-    }
-}
 
 @media screen and (min-width: 645px) {
    
@@ -1009,22 +1045,7 @@ footer h2 {
 
     }
 
-    .hero__container {
-        /* display: flex; */
-        /* flex-direction:column;
-   align-items:flex-start; */
-        padding-bottom: 35px;
-        /* margin:0 auto; */
-        /* width:100vh; */
-        
-
-        margin-right: 0;
-        max-width: 900px;
-        margin: 40px auto 0 auto;
-        /* padding-left: 170px;
-        padding-right: 70px; */
-        
-    }
+  
 
     .contenedortextlogos {
         display: flex;
@@ -1043,18 +1064,7 @@ footer h2 {
 
 
 
-    .hero__container__content {
-        display: flex;
-        flex-direction: row-reverse;
-        /* width:25%; */
-        gap: 50px;
-        padding: 0px 5px 0px 5px 0;
-        align-items: center;
-        justify-content: space-between;
-        /* max-width: 900px;
-       margin:0 auto;  */
-
-    }
+ 
 
     .containerlogos {
         display: flex;

@@ -46,8 +46,7 @@
 
         <section class="hero">
             <div class="hero__container">
-                <div class="hero__container__content">
-
+                
                     <div class="foto">
                         <img class ="fotoperfil" src="img/camilo.png" alt="fotoperfil">
                     </div>
@@ -74,7 +73,7 @@
 
 
 
-                    </div>
+                    
                 </div>
 
                 <!-- <div class="vector1">
@@ -243,8 +242,8 @@
                             <p>Permite explorar los diferentes universos de la serie. Es una página que consume la API de Rick and Morty. La idea es poder ver las 126 dimensiones por las cuales viajan estos dos personajes.
     
                                 La app fue construida haciendo uso de Vite con React. Además se hizo uso de hooks, customhooks y componentes para darle estructura y orden. También, es importante decir que las peticiones son realizadas con axios.</p>
-                            <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
-                            <a href="#"><i class='bx bxl-github'></i>github</a>
+                            <a href="https://rickmortysplanet.netlify.app/" target="_blank"><i class='bx bx-search-alt-2'></i>ver app</a>
+                            <a href="https://github.com/duvanca/rickmorty.git" target="_blank"><i class='bx bxl-github'></i>github</a>
                         </div>
                         
                     </div>
@@ -256,13 +255,12 @@
         
                                 <h3> <i class='bx bxl-react'></i>Weather App.</h3>
                                 <p>Esta pequeña App del tiempo fue realizada con React y sus principales Hooks como useState y useEffect. La App está conectada a una API que detecta automáticamente nuestra ubicación. Por supuesto, esta App ofrece información relevante como los vientos, la presión atmosférica y también ofrece la posibilidad de alternar entre grados F° o C°.</p>
-                                <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
-                                <a href="#"><i class='bx bxl-github'></i>github</a>
+                                <a href="https://watherappsyte.netlify.app" target="_blank"><i class='bx bx-search-alt-2'></i>ver app</a>
+                                <a href="https://github.com/duvanca/watherapp.git" target="_blank"><i class='bx bxl-github'></i>github</a>
                             </div>
                             
                         </div>
 
-                        <div class="portfolio__container">
               
                             <div class="card" Style="--i:url(img/poke.jpg)">
                                 
@@ -273,8 +271,8 @@
 
                                       <br>  Es importante destacar el uso de Redux, React Router, useSelect y los hooks habituales useEffect y useState.
                                     </p>
-                                    <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
-                                    <a href="#"><i class='bx bxl-github'></i>github</a>
+                                    <a href="https://pokeapps.netlify.app/" target="_blank"><i class='bx bx-search-alt-2'></i>ver app</a>
+                                    <a href="https://github.com/duvanca/pokeApp.git" target="_blank"><i class='bx bxl-github'></i>github</a>
                                 </div>
                                 
                             </div>
@@ -285,8 +283,8 @@
             
                                     <h3> <i class='bx bxl-react'></i>CRUD form.</h3>
                                     <p> Esta pequeña App del tiempo fue realizada con React y sus principales Hooks como useState y useEffect. La App está conectada a una API que detecta automáticamente nuestra ubicación. Por supuesto, esta App ofrece información relevante como los vientos, la presión atmosférica y también ofrece la posibilidad de alternar entre grados F° o C°.</p>
-                                    <a href="#"><i class='bx bx-search-alt-2'></i>ver app</a>
-                                    <a href="#"><i class='bx bxl-github'></i>github</a>
+                                    <a href="https://formulariodcm.netlify.app/" target="_blank"><i class='bx bx-search-alt-2'></i>ver app</a>
+                                    <a href="https://github.com/duvanca/formUser.git" target="_blank"><i class='bx bxl-github'></i>github</a>
                                 </div>
                                 
                             </div>
@@ -300,19 +298,28 @@
         </section>
 
         <section id="contacto" class="contacto">
+             <h2 class="title__section">CONTACTO</h2>
 
-           <form class="form">
+           <form class="form"  action="https://formspree.io/f/xdojnjpn"
+           method="POST">
              <div class="form__container">
                 <h2 class="form__title">Contáctame</h2>
 
                 <input type="text" class="form__input" placeholder="Nombre">
-                <input type="email" class="form__input" placeholder="Email">
+                <input type="email" class="form__input" placeholder="Email" name="email">
 
-                <textarea class="form__input form__input--messages" placeholder="Mensaje"></textarea>
+                <textarea class="form__input form__input--messages" placeholder="Mensaje" name="message"></textarea>
 
                 <input type="submit" value="enviar" class="form__cta">
              </div>
            </form>
+
+           <div class="phone__email">
+            
+            <h2 class="contact"> <i class='bx bxs-phone'></i> +57 3007199459</h2>
+            <h2 class="contact"><i class='bx bx-envelope'></i> duvancamilo1089@gmail.com </h2>
+
+           </div>
 
         </section>
 
