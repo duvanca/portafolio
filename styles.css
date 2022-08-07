@@ -25,19 +25,19 @@ body {
 
 header {
     border-bottom: solid 3px rgb(114, 113, 117);
-    background: inherit;
+    background:rgb(207, 205, 205);
     position: sticky;
     top: 0;
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+width: 100%;
 
+}
 
-
-
-    width: 100%;
-
+body.dark header{
+    background: #080808;
 }
 
 
@@ -62,10 +62,16 @@ header {
 
 header i {
     font-size: 28px;
-    color: inherit;
+    color: rgb(255, 81, 0);
     padding-right: 25px;
     z-index: 400;
+    cursor: pointer;
+    font-weight: bold;
 
+}
+
+body.dark header i{
+    color: #00ff22;
 }
 
 .nav-menu a {
@@ -143,14 +149,14 @@ header i {
 .nav-menu a:hover {
 
     /* border-bottom: .2px solid rgb(241 166 0); */
-    color: #0118e9;
-    background-color: rgb(230, 228, 240);
+    color: rgb(255, 81, 0);
+    background-color: rgb(201, 200, 206);
 
 }
 
 body.dark .nav-menu a:hover{
     color: #00ff0d;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(19, 18, 18);
 }
 
 .checkbox {
@@ -187,17 +193,17 @@ body.dark .nav-menu a:hover{
 .foto img {
     width: 290px;
     height: 400px;
-    border: 3px solid #000000;
+    border: 3px solid rgb(255, 81, 0);
     border-radius: 20px;
 
 }
 
 body.dark .foto img{
-    border: 3px solid #ffffff;  
+    border: 3px solid #00ff0d;  
 }
 
 .containerlogos i {
-    color: #001aff;
+    color:rgb(255, 81, 0);
     font-size: 70px;
     cursor: pointer;
 }
@@ -207,7 +213,7 @@ body.dark .containerlogos i{
 }
 
 .btncv {
-    background: linear-gradient(to right, transparent 50%, #001aff 50%) no-repeat left / 200%;
+    background: linear-gradient(to right, transparent 50%,rgb(255, 81, 0) 50%) no-repeat left / 200%;
     color:black;
     padding: 7px 40px;
     font-weight: bold;
@@ -294,7 +300,7 @@ h1 {
     font-size: 65px;
     margin: 0;
     text-align: center;
-    border-right: 2.5px solid rgb(13, 2, 165);
+    border-right: 2.5px solid rgb(255, 81, 0) ;
     padding-right: 10px;
     animation: cursor .5s infinite,
         wiriting 3.5s steps(15, end);
@@ -318,7 +324,7 @@ body.dark h1 {
     }
 
     50% {
-        border-color: rgb(21, 0, 214);
+        border-color: rgb(255, 81, 0) ;
     }
 }
 
@@ -378,9 +384,16 @@ body.dark h1 {
 
 /* ACERCA DE MI */
 
+.aboutme{
+    background: rgb(207, 205, 205);
+}
+ body.dark .aboutme{
+    background-color: #080808;
+ }
+
 .aboutme__container {
 
-    background: inherit;
+    
     max-width: 900px;
     margin: 40px auto;
     padding: 40px 20px 30px 20px;
@@ -419,11 +432,6 @@ body.dark h1 {
 
 
 
-.aboutme {
-
-    background:inherit;
-
-}
 
 .aboutme__container__logos__UVM p {
     margin: 0;
@@ -500,7 +508,7 @@ body.dark .skills__container::-webkit-scrollbar-thumb {
 
 }
 body.dark .skills__cart-html{
-    background-color: #111111f6;
+    background-color: #080808;
     box-shadow: 3px 5px 5px rgba(68, 66, 66, 0.925);
 }
 
@@ -516,7 +524,7 @@ body.dark .skills__cart-html{
 }
 
 .skills__cart-html i {
-    color:#001aff;
+    color:rgb(255, 81, 0);
     font-size: 70px;
 }
 
@@ -1031,13 +1039,13 @@ footer h2 {
     .foto img {
         width: 290px;
         height: 400px;
-        border: 8px solid #000000;
+        border: 8px solid rgb(255, 81, 0);
         border-radius: 20px;
 
     }
 
     body.dark .foto img{
-        border: 8px solid #ffffff;  
+        border: 8px solid #00ff0d;  
     }
 
     /* .vectorcorner{
