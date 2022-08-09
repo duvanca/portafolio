@@ -2,6 +2,7 @@ html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -14,17 +15,19 @@ body {
     /* background: #000000;  */
     background: #dfdfe7;
     color: rgb(0, 0, 0);
+    transition:  0.5s ease;
 }
 
 .dark{
     background:black;
     color:white;
+    transition:  0.5s ease;
 }
 
 
 
 header {
-    border-bottom: solid 3px rgb(114, 113, 117);
+    border-bottom: solid 3px rgb(197, 197, 199);
     background:rgb(207, 205, 205);
     position: sticky;
     top: 0;
@@ -38,6 +41,7 @@ width: 100%;
 
 body.dark header{
     background: #080808;
+    border-bottom: solid 3px rgb(22, 22, 22);
 }
 
 
@@ -90,10 +94,11 @@ body.dark header i{
 
 /* boton de switch -----------------------------------------------------*/
 .container__switch{
-  position: absolute;
+  position: fixed;
   
   right: 60px;
   top:90px;
+  
   
 }
 .switch{
@@ -117,7 +122,7 @@ body.dark header i{
     left:0;
     right:use;
     border-radius: 100px;
-    transition:.3s ease all;
+    transition:.8s ease all;
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
 
 }
@@ -150,7 +155,7 @@ body.dark header i{
 
     /* border-bottom: .2px solid rgb(241 166 0); */
     color: rgb(255, 81, 0);
-    background-color: rgb(201, 200, 206);
+    background-color: rgb(187, 186, 190);
 
 }
 
@@ -433,25 +438,9 @@ body.dark h1 {
 
 
 
-.aboutme__container__logos__UVM p {
-    margin: 0;
-    font-size: 11px;
-    font-weight: bold;
-}
 
-.aboutme__container__logos__acadelmo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.aboutme__container__logos {
-    display: flex;
-    justify-content: center;
-    gap: 94px;
-    margin-top: 30px;
 
-}
 
 /* MIS HABILIDADES */
 
@@ -539,20 +528,24 @@ body.dark .skills__cart-html i{
 }
 
 
-
-
 .skills__cart-css {
-    background-color: #020231;
-    padding: 10px 10px 10px 10px;
+    
     max-height: 380px;
     min-width: 380px;
+    background-color: #ceced4;
+    padding: 10px 10px 10px 10px;
     border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.925);
 
 
 }
+body.dark .skills__cart-css{
+    background-color: #080808;
+    box-shadow: 3px 5px 5px rgba(68, 66, 66, 0.925);
+}
 
 .skills__cart-css h3 {
-    color: white;
+    color: inherit;
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -563,29 +556,39 @@ body.dark .skills__cart-html i{
 }
 
 .skills__cart-css i {
-    color: #00ff22;
+    color:rgb(255, 81, 0);
     font-size: 70px;
 }
 
+body.dark .skills__cart-css i{
+    color:#00ff22;
+}
+
 .skills__cart-css p {
-    color: white;
+    color: inherit;
     margin: 0;
     font-size: 18px;
 }
 
 
 .skills__cart-javascript {
+    
     max-height: 380px;
     min-width: 380px;
-    background-color: #020231;
+    background-color: #ceced4;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
-    /* border: 1px solid yellow; */
+    box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.925);
 
+
+}
+body.dark .skills__cart-javascript{
+    background-color: #080808;
+    box-shadow: 3px 5px 5px rgba(68, 66, 66, 0.925);
 }
 
 .skills__cart-javascript h3 {
-    color: white;
+    color: inherit;
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -596,29 +599,41 @@ body.dark .skills__cart-html i{
 }
 
 .skills__cart-javascript i {
-    color: #00ff22;
+    color:rgb(255, 81, 0);
     font-size: 70px;
 }
 
+body.dark .skills__cart-javascript i{
+    color:#00ff22;
+}
+
 .skills__cart-javascript p {
-    color: white;
+    color: inherit;
     margin: 0;
     font-size: 18px;
 }
 
 
+
+
 .skills__cart-React {
+    
     max-height: 380px;
     min-width: 380px;
-    background-color: #020231;
+    background-color: #ceced4;
     padding: 10px 10px 10px 10px;
-    /* border: 1px solid yellow; */
     border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.925);
 
+
+}
+body.dark .skills__cart-React{
+    background-color: #080808;
+    box-shadow: 3px 5px 5px rgba(68, 66, 66, 0.925);
 }
 
 .skills__cart-React h3 {
-    color: white;
+    color: inherit;
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -629,28 +644,38 @@ body.dark .skills__cart-html i{
 }
 
 .skills__cart-React i {
-    color: #00ff22;
+    color:rgb(255, 81, 0);
     font-size: 70px;
 }
 
+body.dark .skills__cart-React i{
+    color:#00ff22;
+}
+
 .skills__cart-React p {
-    color: white;
+    color: inherit;
     margin: 0;
     font-size: 18px;
 }
 
 .skills__cart-github {
+    
     max-height: 380px;
     min-width: 380px;
-    background-color: #020231;
+    background-color: #ceced4;
     padding: 10px 10px 10px 10px;
-    /* border: 1px solid yellow; */
     border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.925);
 
+
+}
+body.dark .skills__cart-github{
+    background-color: #080808;
+    box-shadow: 3px 5px 5px rgba(68, 66, 66, 0.925);
 }
 
 .skills__cart-github h3 {
-    color: white;
+    color: inherit;
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -661,29 +686,38 @@ body.dark .skills__cart-html i{
 }
 
 .skills__cart-github i {
-    color: #00ff22;
+    color:rgb(255, 81, 0);
     font-size: 70px;
 }
 
+body.dark .skills__cart-github i{
+    color:#00ff22;
+}
+
 .skills__cart-github p {
-    color: white;
+    color: inherit;
     margin: 0;
     font-size: 18px;
 }
 
-
 .skills__cart-git {
+    
     max-height: 380px;
     min-width: 380px;
-    background-color: #020231;
+    background-color: #ceced4;
     padding: 10px 10px 10px 10px;
-    /* border: 1px solid yellow; */
     border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.925);
 
+
+}
+body.dark .skills__cart-git{
+    background-color: #080808;
+    box-shadow: 3px 5px 5px rgba(68, 66, 66, 0.925);
 }
 
 .skills__cart-git h3 {
-    color: white;
+    color: inherit;
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -694,12 +728,16 @@ body.dark .skills__cart-html i{
 }
 
 .skills__cart-git i {
-    color: #00ff22;
+    color:rgb(255, 81, 0);
     font-size: 70px;
 }
 
+body.dark .skills__cart-git i{
+    color:#00ff22;
+}
+
 .skills__cart-git p {
-    color: white;
+    color: inherit;
     margin: 0;
     font-size: 18px;
 }
@@ -708,13 +746,9 @@ body.dark .skills__cart-html i{
 
 
 
-
 /* PORTAFOLIO */
 
 
-.title__portfolio {
-    color: red;
-}
 
 
 .portfolio__container footer h4 {
@@ -731,18 +765,24 @@ body.dark .skills__cart-html i{
     justify-content: center;
     flex-wrap: wrap;
     gap: 80px;
+   
+}
 
 
+body.dark .portafolio{
+    background-color: #080808;
 }
 
 .portafolio {
-
+    
+    background: rgb(207, 205, 205);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 70px;
-
+    padding-bottom: 30px;
+   
 }
 
 .card {
@@ -751,13 +791,17 @@ body.dark .skills__cart-html i{
     height: 600px;
     border-radius: 10px;
     background: var(--i);
-    box-shadow: 3px 5px 5px rgba(22, 22, 22, 0.932);
+    box-shadow: 5px 6px 6px rgba(24, 24, 24, 0.932);
     background-position: center;
     background-size: cover;
     cursor: pointer;
     width: 90%;
 
 
+}
+
+body.dark .card{
+    box-shadow: 4px 7px 7px rgba(190, 189, 189, 0.925)
 }
 
 .content {
@@ -786,8 +830,15 @@ body.dark .skills__cart-html i{
 }
 
 .content h3 i {
+    color: rgb(255, 81, 0);
+}
+
+body.dark .content h3 i{
+    
     color: #00ff22;
 }
+
+
 
 .content p {
     color: white;
@@ -808,20 +859,34 @@ body.dark .skills__cart-html i{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 1px solid #00ff22;
+    border: 1px solid rgb(255, 81, 0);
     border-radius: 14px;
     padding: 0 10px;
+    background: linear-gradient(to right, transparent 50%, rgb(255, 81, 0) 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease;
+}
+
+body.dark .content a{
+    border: 1px solid #00ff22;  
     background: linear-gradient(to right, transparent 50%, #00ff22 50%) no-repeat left / 200%;
     transition: background-position 0.3s ease;
 }
 
+body.dark .content a:hover{
+    background-position: right;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;  
+}
+
 .content a:hover {
     background-position: right;
-    color: rgb(17, 2, 59);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 20px;
 
 }
+
 
 .card:hover .content {
     opacity: 1;
@@ -832,7 +897,7 @@ body.dark .skills__cart-html i{
 
 
 .portafolio h2 {
-    color: white;
+    color:inherit;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
@@ -847,25 +912,27 @@ body.dark .skills__cart-html i{
 
 
 .contacto {
+    color: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #01012c;
-    margin-top: 130px;
+    background:inherit;
+    margin-top: 70px;
     gap: 30px;
 
 }
 
 .title__section {
-    color: white;
+    color:inherit;
     font-size: 32px;
     font-weight: bold;
 }
 
 .form {
+    color: inherit;
     background: transparent;
-    border: 3px solid #00ff22;
+    border: 3px solid rgb(255, 81, 0);
     border-radius: 1em;
     padding: 3.5em 1.5em;
     max-width: 380px;
@@ -873,6 +940,9 @@ body.dark .skills__cart-html i{
     margin: auto;
 
 
+}
+body.dark .form{
+    border: 3px solid #00ff22;
 }
 
 .form__container {
@@ -886,7 +956,7 @@ body.dark .skills__cart-html i{
 .form__title {
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff;
+    color:inherit;
     font-size: 23px;
 
 }
@@ -895,7 +965,11 @@ body.dark .skills__cart-html i{
     padding: 10px 10px;
     outline: none;
     border: none;
-    border: 1px solid rgb(10, 212, 10);
+    border: 1px solid rgb(255, 81, 0);
+}
+
+body.dark .form__input{
+    border: 1px solid #00ff22;
 }
 
 .form__input--messages {
@@ -907,20 +981,32 @@ body.dark .skills__cart-html i{
     cursor: pointer;
     padding: 10px 0;
     border-radius: 17px;
-
-    border: 1px solid white;
-    color: white;
-    background: linear-gradient(to right, transparent 50%, #00ff22 50%) no-repeat left / 200%;
+  font-weight: bold;
+    border: 1px solid rgb(255, 81, 0);
+    color: inherit;
+    background: linear-gradient(to right, transparent 50%,rgb(255, 81, 0) 50%) no-repeat left / 200%;
     transition: background-position 0.3s ease;
 
 }
 
 .form__cta:hover {
     background-position: right;
-    color: rgb(17, 2, 59);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 
 
+}
+
+body.dark .form__cta{
+    border: 1px solid #00ff22;
+    background: linear-gradient(to right, transparent 50%,#00ff22 50%) no-repeat left / 200%;
+
+}
+
+body.dark .form__cta:hover{
+    background-position: right;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .phone__email {
@@ -935,7 +1021,7 @@ body.dark .skills__cart-html i{
 
 .contact {
     margin: 0;
-    color: white;
+    color: inherit;
     font-size: 17px;
     font-weight: bold;
     display: flex;
@@ -968,17 +1054,31 @@ body.dark .skills__cart-html i{
 /* Footer */
 
 footer h2 {
-    color: white;
+    color: inherit;
     margin: 25px;
     text-align: center;
     font-size: 16px;
+    
+}
+
+footer{
+    background: rgb(207, 205, 205);
+    height:89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+body.dark footer{
+    background-color: #080808;
 }
 
 
 
 @media screen and (min-width: 645px) {
 
-    header {}
+  
 
     .nav-menu {
 
