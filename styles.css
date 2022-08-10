@@ -1039,7 +1039,7 @@ body.dark .form__cta:hover{
 
     .contact {
         margin: 0;
-        color: white;
+        color:inherit;
         font-size: 17px;
         font-weight: bold;
         display: flex;
