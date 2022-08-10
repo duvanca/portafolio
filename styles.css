@@ -470,7 +470,7 @@ body.dark .skills__container::-webkit-scrollbar-thumb {
 
 }
 .skills__container::-webkit-scrollbar-thumb {
-    background: #001aff;
+    background:rgb(255, 81, 0);
     border-radius: 30px;
 
 }
